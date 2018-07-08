@@ -25,9 +25,9 @@ public function Start() : void {
 	b_hasKey = false;
 	
 	//Get mesh from the character MeshFilter
-	mesh = GetComponent(MeshFilter).sharedMesh;
+	//mesh = GetComponent(MeshFilter).sharedMesh;
 	//Get hight from the top of our character to the bottom of our character
-	f_height = mesh.bounds.size.y * transform.localScale.y;
+	//f_height = mesh.bounds.size.y * transform.localScale.y;
 	//Set up the last y-axis position of our character
 	f_lastY = transform.position.y;
 	b_isJumping = false;
@@ -136,8 +136,8 @@ public function OnTriggerEnter (hit : Collider) : IEnumerator {
 }
 
 public function OnDrawGizmos() : void {
-	mesh = GetComponent(MeshFilter).sharedMesh;
-	f_height = mesh.bounds.size.y * transform.localScale.y;
+	//mesh = GetComponent(MeshFilter).sharedMesh;
+	//f_height = mesh.bounds.size.y * transform.localScale.y;
 	var v3_right : Vector3 = new Vector3(transform.position.x + (GetComponent.<Collider>().bounds.size.x*0.45), transform.position.y, transform.position.z);
 	var v3_left : Vector3 = new Vector3(transform.position.x - (GetComponent.<Collider>().bounds.size.x*0.45), transform.position.y, transform.position.z);
 	Gizmos.color = Color.red;

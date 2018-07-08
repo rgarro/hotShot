@@ -1,5 +1,8 @@
 fileFormatVersion: 2
 guid: 1ca29b7916f37a9449ad363a3f3fa07d
+labels:
+- Road
+- Vegetation
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,7 +12,13 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: PlaneObject
-  externalObjects: {}
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: d1022387301ddc04fb990e0f55015174, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -84,7 +93,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
